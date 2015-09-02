@@ -33,4 +33,8 @@ class GC_kata_test < Minitest::Test
 	 assert_equal("greene",results[-2])
 	 assert_equal("greene", results[56])
    end
+   def test_number_5_in_array_is_county
+   results=greene_county
+   assert_equal("county", results[4])
+   end
 end
