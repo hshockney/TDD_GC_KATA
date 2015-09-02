@@ -34,7 +34,12 @@ class GC_kata_test < Minitest::Test
 	 assert_equal("greene", results[56])
    end
    def test_number_5_in_array_is_county
-   results=greene_county
-   assert_equal("county", results[4])
+     results=greene_county
+     assert_equal("county", results[4])
    end
+   def test_check_other_numbers_divisible_by_5_are_county
+     results=greene_county
+     assert_equal("county", results[39])
+     assert_equal("county", results [84])
+   end	 
 end
