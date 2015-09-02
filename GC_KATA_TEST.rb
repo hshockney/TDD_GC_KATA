@@ -18,10 +18,10 @@ class GC_kata_test < Minitest::Test
 	 assert_equal(2, results[1])
    end
    
-   def test_last_element_in_array_is_100
-     results=greene_county
-	 assert_equal(100, results[-1])
-   end
+   #def test_last_element_in_array_is_100
+    # results=greene_county
+	# assert_equal(100, results[-1])
+  # end
    
    def test_third_element_in_array_is_greene
      results= greene_county
@@ -42,4 +42,9 @@ class GC_kata_test < Minitest::Test
      assert_equal("county", results[39])
      assert_equal("county", results [84])
    end	 
+   def test_to_check_numbers_in_array_divisible_by_3_and_5_are_greene_county
+   results= greene_county
+   assert_equal("greene_county",results[14])
+   #assert_equal("greene_county",results[34])
+   end
 end
